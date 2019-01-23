@@ -1,1 +1,12 @@
-<ngb-pagination [collectionSize]="5" [pageSize]="1" [page]="1" [(page)]="page"></ngb-pagination>
+<!--<ngb-pagination [collectionSize]="5" [pageSize]="1" [page]="1" [(page)]="page"></ngb-pagination> -->
+
+<ngb-pagination>
+    <ng-template ngbPaginationFirst>First</ng-template>
+    <ng-template ngbPaginationLast>Last</ng-template>
+    <ng-template ngbPaginationPrevious>Prev</ng-template>
+    <ng-template ngbPaginationNext>Next</ng-template>
+    <ng-template ngbPaginationEllipsis>1</ng-template>
+    <ng-template ngbPaginationEllipsis>2</ng-template>
+    <ng-template ngbPaginationEllipsis>3</ng-template>
+    <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+  </ngb-pagination>
